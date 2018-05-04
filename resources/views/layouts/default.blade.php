@@ -5,22 +5,14 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-  <header class="navbar navbar-fixed-top navbat-inverse">
-      <div class="container">
-          <div class="col-md-offset-1 col-md-10">
-              <a href="/" id="logo">Sampple App</a>
-              <nav>
-                  <ul class="nav navbar-nav navbar-right">
-                      <li><a href="/help">Help</a> </li>
-                      <li><a href="#">login</a></li>
-                  </ul>
-              </nav>
-          </div>
-      </div>
+  @include('layouts._header')
   </header>
   <div class="container">
-    @yield('content')
+  <div class="col-md-offset-1 col-md-10">
+   @yield('content')
+    @include('layouts._footer')
   </div>
-
+ </div>
+      
   </body>
 </html>

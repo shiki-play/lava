@@ -7,7 +7,7 @@
     </p>
     <p>everything begins here</p>
     <p>
-        <a class="btn btn-lg btn-success" href="#" role="button">
+        <a class="btn btn-lg btn-success" href="{{ route('signup') }}" role="button">
             现在注册
         </a>
     </p>
