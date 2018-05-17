@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title','Sample App') - Laravel </title>
+    <title>@yield('title','Sample Apple') - Laravel </title>
     <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
