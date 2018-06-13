@@ -43,3 +43,11 @@ Route::post('/users/followers/{user}', 'FollowersController@store')->name('follo
 Route::delete('/users/followers/{user}', 'FollowersController@destroy')->name('followers.destroy');
 
 
+Route::get('/exam/provide','ExamController@provide')->name('exam.provide');
+Route::post('/exam/provide','ExamController@store')->name('exam.provide');
+
+Route::get('/exam/answer','ExamController@answer')->name('exam.answer');
+Route::post('/exam/answer','ExamController@result')->name('exam.answer'); 
+Route::get('/exam/{exam}/edit','ExamController@edit')->name('exam.edit');
+Route::patch('/exam/{exam}/update','ExamController@update')->name('exam.update');
+Route::delete('/exam/{exam}/destroy','ExamController@destroy')->name('exam.destroy');

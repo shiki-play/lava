@@ -6,6 +6,10 @@
     <section class="status_form">
         @include('shared._status_form')
     </section>
+    <section>
+        <a href="{{ route('exam.provide') }}" class="col-md-4">准备考试</a>
+        <a href="{{ route('exam.answer') }}" class="col-md-4">去考试</a>
+    </section>
         <h3>微博列表</h3>
         @include('shared._feed')
     </div>
